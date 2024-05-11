@@ -9,6 +9,7 @@ export default function Navbar() {
             <p>Home</p>
             <p>Favorites</p>
             <p>About Me</p>
+            <p></p>
             {/* <img src="" alt="" />
             <Link to="/favorites">Favorites</Link>
             <Link to="/home">Home</Link>
