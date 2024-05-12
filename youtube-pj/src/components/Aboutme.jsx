@@ -1,7 +1,9 @@
 export default function() {
     return (
     <>
-        <Navbar/>
+
+        {/* <Navbar/> */}
+
     
         <div className="Contributors">
             
