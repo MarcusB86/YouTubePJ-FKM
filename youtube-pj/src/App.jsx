@@ -10,9 +10,9 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route path="/video" element={<Video />} />
-          <Route path="/video/:videoId" component={<Video/>} />
+          <Route exact path="/" element={<Home/>} />
+          <Route path="/video" element={<Video/>} />
+          <Route path="/video/:videoId" element={<Video/>} />
         </Routes>
       </Router>
     </div>
