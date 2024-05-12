@@ -1,0 +1,19 @@
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.video-item {
+    text-align: center;
+}
+/* .header-container {
+    background-color: red;
+    border-radius: 1px;
+    padding: 10px;
+    display: inline-block;
+}
+
+h1 {
+    margin: 9;
+} */
