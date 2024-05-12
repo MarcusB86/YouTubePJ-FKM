@@ -6,10 +6,10 @@ import { Link } from 'react-router-dom';
 export default function Navbar() {
     return (
         <nav className='navbar'>
-           <img src="" alt="" />
+            <img src="" alt="" />
             <Link to="/favorites">Favorites</Link>
             <Link to="/home">Home</Link>
-            <Link to="/about">About Me</Link>
+            <Link to="/Aboutme">About Me</Link>
         </nav>
     );
 }
