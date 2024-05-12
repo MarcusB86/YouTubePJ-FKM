@@ -5,10 +5,10 @@ export default function Home() {
     const [searchVideo, setSearchVideo] = useState('');
     const [videos, setVideos] = useState([]);
 
-    async function handleSearchSubmit(event) {
+    function handleSearchSubmit(event) {
         event.preventDefault();
 
-   
+    
         const apiKey = 'AIzaSyDg3kzDFajLeMcs1XTKF3oegDOLQtro2z0';
 
       
@@ -20,6 +20,7 @@ export default function Home() {
                 return response.json();
             })
             .then(data => {
+                console.log(data);
                 if (data.items.length === 0) {
                     throw new Error('No videos found');
                 }
