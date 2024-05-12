@@ -1,11 +1,9 @@
 export default function() {
     return (
     <>
-<<<<<<< HEAD
+
         {/* <Navbar/> */}
-=======
-        <Navbar/>
->>>>>>> main
+
     
         <div className="Contributors">
             
