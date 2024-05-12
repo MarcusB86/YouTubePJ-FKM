@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./styles.css"
+import { Link } from "react-router-dom";
 
 export default function Home() {
     const [searchVideo, setSearchVideo] = useState('');
@@ -52,10 +53,12 @@ export default function Home() {
 
             <div className="video-grid">
                 {videos.map(video => (
+                    <Link to={"/video"}>
                     <div key={video.id}>
                         <img src={video.thumbnail} alt="Thumbnail" />
                         <p>{video.title}</p>
                     </div>
+                    </Link>
                 ))}
             </div>
         </div>
