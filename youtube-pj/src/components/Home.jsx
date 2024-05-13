@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./styles.css"
+import Navbar from "./Navbar";
 
 export default function Home() {
     const [searchVideo, setSearchVideo] = useState('');
@@ -39,6 +40,8 @@ export default function Home() {
     }
     return (
         <div>
+            {/* rendered navBar component */}
+            <Navbar handleSearchSubmit={handleSearchSubmit} />
             <h1 style={{ backgroundColor: "red", borderRadius: "10px", padding: "10px", display: "inline-block", margin: "0" }}>YouTube?</h1>
             <form onSubmit={handleSearchSubmit}>
                 <input
