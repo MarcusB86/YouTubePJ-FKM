@@ -39,7 +39,8 @@ export default function Home() {
     }
     return (
         <div>
-            <h1 style={{ backgroundColor: "red", borderRadius: "10px", padding: "10px", display: "inline-block", margin: "0" }}>YouTube?</h1>
+            <h1>TubeYou</h1>
+
             <form onSubmit={handleSearchSubmit}>
                 <input
                     type="text"
@@ -49,14 +50,17 @@ export default function Home() {
                 />
                 <button type="submit">Search</button>
             </form>
-
+            <div className="page-container">
             <div className="video-grid">
                 {videos.map(video => (
                     <div key={video.id}>
                         <img src={video.thumbnail} alt="Thumbnail" />
                         <p>{video.title}</p>
+                        
                     </div>
+                    
                 ))}
+            </div>
             </div>
         </div>
     );

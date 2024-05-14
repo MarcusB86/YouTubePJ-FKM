@@ -7,13 +7,10 @@
 .video-item {
     text-align: center;
 }
-/* .header-container {
-    background-color: red;
-    border-radius: 1px;
-    padding: 10px;
-    display: inline-block;
-}
-
-h1 {
-    margin: 9;
-} */
+.page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
