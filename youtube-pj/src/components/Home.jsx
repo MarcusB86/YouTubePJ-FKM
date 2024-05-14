@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 export default function Home() {
     const [searchVideo, setSearchVideo] = useState('');
     const [videos, setVideos] = useState([]);
+    
 
     function handleSearchSubmit(event) {
         event.preventDefault();
@@ -31,10 +32,10 @@ export default function Home() {
                     thumbnail: item.snippet.thumbnails.default.url
                 }));
                 setVideos(videoItems);
-                setError(null);
+                
             })
             .catch(error => {
-                setError(error.message);
+                console.error('Error fetching videos:', error);
                 setVideos([]);
             });
     }
