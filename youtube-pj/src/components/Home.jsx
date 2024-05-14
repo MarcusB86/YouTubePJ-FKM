@@ -9,9 +9,7 @@ export default function Home() {
     function handleSearchSubmit(event) {
         event.preventDefault();
 
-    
-        const apiKey = 'AIzaSyDg3kzDFajLeMcs1XTKF3oegDOLQtro2z0';
-
+        const apiKey = import.meta.env.VITE_API_KEY;
       
         fetch(`https://www.googleapis.com/youtube/v3/search?key=${apiKey}&part=snippet&type=video&q=${searchVideo}&maxResults=8`)
             .then(response => {
@@ -53,7 +51,7 @@ export default function Home() {
 
             <div className="video-grid">
                 {videos.map(video => (
-                    <Link to={"/video"}>
+                    <Link to={`/video/${video.id}`}>
                     <div key={video.id}>
                         <img src={video.thumbnail} alt="Thumbnail" />
                         <p>{video.title}</p>
