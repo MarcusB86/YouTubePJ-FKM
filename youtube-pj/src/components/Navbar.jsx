@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css'
 
+
 export default function Navbar({ handleSearchSubmit }) {
     const handleSubmit = (e) => {
         e.preventDefault(); // Prevents the default form from refreshin
