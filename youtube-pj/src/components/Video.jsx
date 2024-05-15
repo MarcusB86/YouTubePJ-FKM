@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Navbar from "./Navbar";
+// import Navbar from "./Navbar";
 import { useParams } from "react-router-dom";
 
 export default function Video() {
@@ -18,7 +18,7 @@ export default function Video() {
 console.log(videos);
     return (
         <div>
-            <iframe src={`http://www.youtube.com/embed/${videoID}enablejsapi=1`}
+            <iframe src={`https://www.youtube.com/embed/${videoID}?enablejsapi=1`}
   frameborder="0" id="player" height="400" width="650" title="YoutubePlayer" >
             </iframe>
             <p>Video Page</p>
