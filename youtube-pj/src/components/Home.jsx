@@ -11,7 +11,7 @@ export default function Home() {
         event.preventDefault();
 
     
-        const apiKey = 'AIzaSyDg3kzDFajLeMcs1XTKF3oegDOLQtro2z0';
+        const apiKey = import.meta.env.VITE_API_KEY;
 
       
         fetch(`https://www.googleapis.com/youtube/v3/search?key=${apiKey}&part=snippet&type=video&q=${searchVideo}&maxResults=8`)

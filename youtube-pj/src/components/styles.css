@@ -4,9 +4,12 @@
     grid-gap: 20px;
 }
 .video-grid div {
-    flex: 1 1 calc(25% - 16px);
+    flex: 1, 1;
     box-sizing: border-box;
-    max-width: calc(25% - 16px); 
+    max-width: 300px; 
+    max-height: 300px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
 }
 
 .video-item {
