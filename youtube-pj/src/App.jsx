@@ -8,7 +8,7 @@ function App() {
   return (
     <div>
       <Router>
-        <Navbar />
+      <Navbar handleSearchSubmit={handleSearchSubmit} />
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/video" element={<Video />} />
